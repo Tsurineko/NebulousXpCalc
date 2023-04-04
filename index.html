@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lamg="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta property="og:url" content="https://Nebulous.io-XP-Calculator"> -->
+    <title>Nebulous.io XP Calc</title>
+    <link rel="stylesheet" href="noemalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href=""><img class="header-img" src="img/Nebulous-icon.jpg"></a>
+        <h1><a href="">Nebulous.io XP Calc</a>
+    </h1></header>
+    <ul class="li-content">
+    <li class="calc">
+        <h2>PlayerXP</h2>
+        <dl>
+
+            <dt><label for="playerlv-1">現在のレベル</label></dt>
+            <dd><input type="number" id="playerlv-1" value="1" min="1" max="99999"></dd>
+            <p>から</p>
+
+            <dt><label for="playerlv-2">目標レベル</label></dt>
+            <dd><input type="number" id="playerlv-2" value="1" min="1" max="99999"></dd>
+
+            <p>の到達に必要な経験値<br><span id="player-XP"></span></p>
+
+         </dl>
+         <button id="btn1" type="button" value="計算">計算</button>
+        </li>
+    <li class="calc">
+        <h2>ClanXP</h2>
+        <dl>
+            
+          <dt><label for="clanlv-1">現在のレベル</label></dt>
+          <dd><input type="number" id="clanlv-1" value="1"  min="1" max="9999"></dd>
+          <p>から</p>
+
+          <dt><label for="clanlv-2">目標レベル</label></dt>
+          <dd><input type="number" id="clanlv-2" value="1" min="1" max="9999"></dd>
+
+          <p>の到達に必要な経験値<br><span id="clan-XP"></span></p>
+
+       </dl>
+       <button id="btn2" type="button" value="計算">計算</button>
+    </li>
+    </ul>
+    <script src="app.js"></script>
+    </body>
+    </html>

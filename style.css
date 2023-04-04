@@ -1,0 +1,29 @@
+body {
+    color: white;
+    background-color: #0e0f0e;
+    text-align: center;
+}
+
+.header {
+    /* background-color: aliceblue; */
+    display: flex;
+    /* position: fixed */
+}
+
+.header-img {
+    width: 3em;
+    height: 3em;
+}
+
+.calc {
+        margin-right: 50px;
+}
+
+.li-content {
+    display: flex;
+
+}
+
+button {
+    line-height: 1.5;
+}
