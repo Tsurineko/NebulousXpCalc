@@ -7,45 +7,58 @@
     <link rel="stylesheet" href="noemalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-dark">
+    <!-- <div class="background-color-dark"> -->
     <header class="header">
         <a href=""><img class="header-img" src="img/Nebulous-icon.jpg"></a>
-        <h1><a href="">Nebulous.io XP Calc</a>
-    </h1></header>
-    <ul class="li-content">
-    <li class="calc">
-        <h2>PlayerXP</h2>
-        <dl>
+        <h1><a href="" class="header-text">Nebulous.io XP Calc</a></h1>
+        <div class="header-lang">
+            <input type="radio" id="lang-ja" name="lang" value="Ja" checked>
+            <label class="white" for="lang-ja">Ja</label>
+            <input type="radio" id="lang-en" name="lang" value="En">
+            <label class="white" for="lang-en">En</label>
+        </div>
+        <button id="change-theme"><span class="lang-theme">テーマ</span></button>
+    </header>
+    <section>
+        <ul class="li-content">
+            <li class="li-calc">
+                <h2><span id="lang-player-XP">PlayerXP</span></h2>
+                <dl>
 
-            <dt><label for="playerlv-1">現在のレベル</label></dt>
-            <dd><input type="number" id="playerlv-1" value="1" min="1" max="99999"></dd>
-            <p>から</p>
+                    <dt><label for="playerlv-1"><span class="lang-current-lv">現在のレベル</span></label></dt>
+                    <dd><input type="number" id="playerlv-1" value="1" min="1" max="99999"></dd>
+                    <p><span class="lang-to">から</span></p>
 
-            <dt><label for="playerlv-2">目標レベル</label></dt>
-            <dd><input type="number" id="playerlv-2" value="1" min="1" max="99999"></dd>
+                    <dt><label for="playerlv-2"><span class="lang-target-lv">目標レベル</label></dt>
+                    <dd><input type="number" id="playerlv-2" value="1" min="1" max="99999"></dd>
 
-            <p>の到達に必要な経験値<br><span id="player-XP"></span></p>
+                    <p><span class="lang-required-XP">必要経験値</span><br><span id="player-XP"></span></p>
 
-         </dl>
-         <button id="btn1" type="button" value="計算">計算</button>
-        </li>
-    <li class="calc">
-        <h2>ClanXP</h2>
-        <dl>
-            
-          <dt><label for="clanlv-1">現在のレベル</label></dt>
-          <dd><input type="number" id="clanlv-1" value="1"  min="1" max="9999"></dd>
-          <p>から</p>
+                </dl>
+                <button id="btn1" type="button" value="計算"><span class="lang-run">計算</span></button>
+            </li>
+            <li class="li-calc">
+                <h2><span id="lang-clan-xp">ClanXP</span></h2>
+                <dl>
+                    
+                    <dt><label for="clanlv-1"><span class="lang-current-lv">現在のレベル</span></label></dt>
+                    <dd><input type="number" id="clanlv-1" value="1"  min="1" max="9999"></dd>
+                    <p><span class="lang-to">から</span></p>
 
-          <dt><label for="clanlv-2">目標レベル</label></dt>
-          <dd><input type="number" id="clanlv-2" value="1" min="1" max="9999"></dd>
+                    <dt><label for="clanlv-2"><span class="lang-target-lv">目標レベル</span></label></dt>
+                    <dd><input type="number" id="clanlv-2" value="1" min="1" max="9999"></dd>
 
-          <p>の到達に必要な経験値<br><span id="clan-XP"></span></p>
+                    <p><span class="lang-required-XP">必要経験値</span><br><span id="clan-XP"></span></p>
 
-       </dl>
-       <button id="btn2" type="button" value="計算">計算</button>
-    </li>
-    </ul>
+                </dl>
+                <button id="btn2" type="button" value="計算"><span class="lang-run">計算</span></button>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        
+    </footer>
     <script src="app.js"></script>
-    </body>
-    </html>
+</body>
+</html>
