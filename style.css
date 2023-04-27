@@ -1,12 +1,33 @@
+/* 共通 */
 body {
-    color: white;
-    background-color: #0e0f0e;
+
     text-align: center;
 }
 
+button {
+    line-height: 1.5;
+}
+
+.theme-dark {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.theme-light {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.white {
+    color: whitesmoke;
+}
+
+/* header */
 .header {
-    /* background-color: aliceblue; */
+    background-color: rgb(0, 0, 0);
     display: flex;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     /* position: fixed */
 }
 
@@ -15,15 +36,32 @@ body {
     height: 3em;
 }
 
-.calc {
-        margin-right: 50px;
+.header-lang {
+    margin: 0 0 0 auto;
 }
 
+.header-text {
+    color: aliceblue;
+}
+
+#change-theme {
+    height: fit-content;
+}
+
+/* li */
 .li-content {
     display: flex;
 
 }
 
-button {
-    line-height: 1.5;
+
+.li-calc {
+    margin-right: auto;
 }
+
+/* 言語設定 */
+
+
+
+
+
